@@ -55,7 +55,11 @@ const addBlock = (newBlock) => {
 // 귀찮으니... 블럭 100개 생성..
 const block100 = () => {
   for (let i = 1; i < 100; i++) {
-    addBlock(nextBlock(["tx" + i]));
+    setTimeout(() => {
+      console.log("블록이 생성되었습니다!!");
+      addBlock(nextBlock(["tx" + i]));
+      console.log(blocks[i]);
+    }, 1000 * i);
   }
 };
 
@@ -64,4 +68,4 @@ block100();
 // 제네시스 블록 해싱
 const hash = createHash(genesisBlock).slice(0, 20);
 
-console.log("blocks:", blocks);
+// console.log("blocks:", blocks);
