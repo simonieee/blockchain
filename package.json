@@ -1,0 +1,25 @@
+{
+  "name": "merkle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.18.2",
+    "base58-js": "^1.0.0"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "js-sha3": "^0.8.0",
+    "merkletreejs": "^0.2.31"
+  }
+}
